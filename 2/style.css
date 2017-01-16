@@ -1,0 +1,13 @@
+
+
+form{
+	width:256px;
+	background-color: yellow;
+	padding:0.4em;
+}
+
+.in{
+	border-radius: 4px;
+	width: 250px;
+	margin-top: 10px; 
+}
