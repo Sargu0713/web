@@ -1,13 +1,60 @@
+body {
+
+	text-align: center;
+	font-style: italic;
+}
+
+input{
+	padding-left: 10px;
+}
 
 
 form{
-	width:256px;
-	background-color: yellow;
+	
+	border:2px solid red;
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);; 
+	position: absolute;
+	background-color: orange;
 	padding:0.4em;
 }
 
-.in{
+.in  {
+	box-shadow: inset 0 0 7px 0 rgba(0,0,0,0.3);
 	border-radius: 4px;
-	width: 250px;
+	width: 185px;
 	margin-top: 10px; 
 }
+
+.inar  {
+	resize: none;
+	box-shadow: inset 0 0 7px 0 rgba(0,0,0,0.3);
+	margin-top: 10px;
+	border-radius: 4px;
+	width: 182px;
+}
+
+
+.sub {
+	box-shadow: inset 0 0 7px 0 rgba(0,0,0,0.3);
+	height: 23px;
+	font-size: 12px;
+	font-style: italic;
+	background-color: white;
+	float: right;
+	width: 90px;
+	border-radius: 6px;
+}
+
+p{
+	font-size: 19px
+
+}
+
+
+input::-webkit-input-placeholder {font-style: italic; padding:2px ;}
+textarea::-webkit-input-placeholder {font-style: italic;  padding:1px 7px; font-size: 14.2px}
+input::-webkit-datetime-edit-month-field { color: rgb(169,169,169);}
+input::-webkit-datetime-edit-day-field { color: rgb(169,169,169); }
+input::-webkit-datetime-edit-year-field { color: rgb(169,169,169); }
+input::-webkit-datetime-edit-text {color: rgb(169,169,169); } 
