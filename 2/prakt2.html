@@ -5,13 +5,21 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body >
 	<form >
-		<input class="in" type="text" name="nam" placeholder="Имя"><br>
-		<input class="in" type="tel" name="t" placeholder="Телефон"><br>
-		<input class="in" type="email" name="em" placeholder="E-mail"><br>
-		<textarea class="in" placeholder="Сообщение"></textarea><br>
-		<input type="sumbit" name="sub" value="Отправить">
+		<p>Регистрация</p>
+		<input class="in" type="text" name="fn" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё-0-9]{2,14}"><br>
+		<input class="in" type="text" name="ln" placeholder="Фамилия" pattern="[A-Za-zА-Яа-яЁё]{4,14}"><br>
+		<input class="in" type="text" name="o" placeholder="Отчество" pattern="[A-Za-zА-Яа-яЁё]{4,16}"><br>
+		<input class="in" type="date" name="db" placeholder="Дата рождения"><br><!-- minimal'noe znachenie goda = 1900 max = 2013-->
+		<input  class="in" type="email" name="em" placeholder="E-mail" "><br><!-- ne menee 6 simvolov lat alfavita + 2 cifri -->
+		<input class="in"  type="tel" name="t" placeholder="Телефон"><br>                     <!-- ^ -->
+		<input class="in" type="text" name="log" placeholder="Логин"><br>                     <!-- ^ -->
+		<input class="in" type="password" name="f" placeholder="Пароль"><br><!-- ot 7 do 18 simvolov, min 1 v verh registr , 2 specsimvola, only latinica -->
+
+
+		<textarea class="inar"  placeholder="Сообщение" rows="6"></textarea><br>
+		<input class="sub" type="submit" name="sub" value="Отправить">
 	</form>
 </body>
 </html>
